@@ -6,7 +6,7 @@
 #include "player.hpp"
 #include "card.hpp"
 using namespace std;
-using namespace ariel;
+//using namespace ariel;
 
 namespace ariel{
     class Game{
@@ -14,9 +14,12 @@ namespace ariel{
         Player p1;
         Player p2;
         string lastTurn;
+        string logGame;
         string status;
         vector<Card> package;
         vector<string> gameProsess;
+        bool finish;
+        string winner;
 
     public:
         Game(Player &player1, Player &player2);

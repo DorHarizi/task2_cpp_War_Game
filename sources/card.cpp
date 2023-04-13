@@ -6,12 +6,22 @@ using namespace std;
 using namespace ariel;
 
 namespace ariel{
+
+    Card::Card() {
+                value = 0;
+                type = "";
+                name = ""; 
+    }
     
     Card::Card(int newValue, string newType, string newName) {
         value = newValue;
         type = newType;
         name = newName;
     }
+
+    int Card::getValue(){return value;}
+    string Card::getType(){return type;}
+    string Card::getName(){return name;}
 
     void Card::setValue(int newValue) {
         value = newValue;

@@ -7,7 +7,7 @@ using namespace std;
 
 
 namespace ariel{
-    
+
     class Card{
         private:
             int value;
@@ -15,17 +15,12 @@ namespace ariel{
             string name;
 
         public:
-            Card() {
-                value = 0;
-                type = "";
-                name = ""; 
-            }
-
+            Card();
             Card(int, string, string);
 
-            int getValue(){return value;}
-            string getType(){return type;}
-            string getName(){return name;}
+            int getValue();
+            string getType();
+            string getName();
             
             void setValue(int);
             void setType(string);
